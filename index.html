@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <p>Author: Guidong Luo</p>
+    </header>
+    <!-- a title (e.g. "Pomodoro Timer First Brainstorm")
+subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+subtitle for the date
+attendance list
+agenda of what the meeting will cover
+things that were unfinished business from last meeting
+things that are new business that need to be talked about
+any miscellaneous comments / questions / concerns that anyone would like to bring up
+pictures of any diagrams / architecture / things that were presented
+SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+audio recording the meeting
+video recording of the meeting -->
+    <main> 
+        
+        <nav>
+            <ul>
+                <li>Attendance</li>
+                <li>Agenda</li>
+                <li>Meeting</li>
+                <li>Audio</li>
+                <li>Video</li>
+            </ul>
+        </nav>
+        <section>
+            <h1> Meeting Minutes</h1>
+            <h2> recording</h2>
+            <h3>Oct 6th 2023</h3>
+        </section>
+        <section>
+            <h2>Attendance</h2>
+            <ul>
+                <li><span>Guidong Luo</span></li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Agenda</h2>
+            <ol>
+                <li>Check-ins</li>
+                <li>Brainstorming</li>
+                <li>Documentation</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Unfinished Business</h2>
+            <h3><b>Think of a project</b></h3>
+            <p> Last time we discussed that the project should start as early <strong>as early as possible</strong> and we still yet to figure out what the project should be.</p>
+            <details>
+                <summary>Details</summary>
+                <p> We have a few ideas, but we are not sure which one is the best. We need to discuss more about it.</p>
+            </details>
+        </section>
+        <section>
+            <h2>New Business</h2>
+            <h3><b>Disband the team</b></h3>
+            <p>After a long discussion, we decided to disband the team due to <i>the lack of efficiency</i>. This meeting will discuss how we should distribute the money.</p>
+            <br>
+            <h3><b>Found a new team</b></h3>
+            <p>Some of you may be given a chance to stay and we will recruit new productive staffs to work on new upcoming projects. Details will be decided in this meeting.</p>
+        </section>
+        <section>
+            <h2>Concerns</h2>
+            <p>Last time some of teammates fell asleep during the meeting. We need to avoid such things in the future.</p>
+            <img src="sleep.jfif" alt="sleepy team">
+        </section>
+        <section>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="audio.m4a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section>
+            <h2>Video</h2>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Register for next meeting</legend>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </li>
+                        <li>
+                            <label for="topics">
+                                Choose your favorite topic from the list:
+                            </label>   
+                            <input list="topics" name="topic" id="topic">
+                            <datalist id="topics">
+                                <option value="Quit">
+                                <option value="Donate">
+                            </datalist> 
+                        </li>
+                        <li>
+                            <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="33"></textarea>
+                        </li>
+                        <li>
+                            <label for="date">Choose a date:</label>
+                            <select id="date">
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                            </select>
+                        </li>
+                            <input type="submit" value="Submit">
+                            <button type="reset">Reset</button> 
+                    </ul>
+
+
+                                               
+    
+                    
+                   
+                    
+                </fieldset>
+               
+            </form>
+        </section>
+    </main> 
+    <footer>
+        <p>Copyright@Guidong Luo</p>
+    </footer>
+</body>
+</html>

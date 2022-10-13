@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- link favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -12,19 +13,6 @@
     <header>
         <p>Author: Guidong Luo</p>
     </header>
-    <!-- a title (e.g. "Pomodoro Timer First Brainstorm")
-subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
-subtitle for the date
-attendance list
-agenda of what the meeting will cover
-things that were unfinished business from last meeting
-things that are new business that need to be talked about
-any miscellaneous comments / questions / concerns that anyone would like to bring up
-pictures of any diagrams / architecture / things that were presented
-SWE meetings often have people diagram things on a whiteboard so we want those captured as well
-For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
-audio recording the meeting
-video recording of the meeting -->
     <main> 
         
         <nav>
@@ -79,21 +67,23 @@ video recording of the meeting -->
             <p>Last time some of teammates fell asleep during the meeting. We need to avoid such things in the future.</p>
             <img src="sleep.jfif" alt="sleepy team">
         </section>
-        <section>
-            <h2>Audio</h2>
-            <audio controls>
-                <source src="audio.m4a" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
-        <section>
-            <h2>Video</h2>
-            <video width="320" height="240" controls>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-        <section>
+        <div class="media">
+            <section>
+                <h2>Audio</h2>
+                <audio controls>
+                    <source src="audio.m4a" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+            <section>
+                <h2>Video</h2>
+                <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            
+        <div class="form">
             <form>
                 <fieldset>
                     <legend>Register for next meeting</legend>
@@ -131,18 +121,14 @@ video recording of the meeting -->
                         </li>
                             
                     </ul>
-                    <input type="submit" value="Submit">
-                    <button type="reset">Reset</button> 
-
-                                               
-    
-                    
-                   
-                    
+                    <input class="submit" type="submit" value="Submit">
+                    <button class="reset" id="reset" type="reset">Reset</button> 
                 </fieldset>
                
             </form>
-        </section>
+        </div class="form">
+        </div>
+        
     </main> 
     <footer>
         <p>Copyright@Guidong Luo</p>

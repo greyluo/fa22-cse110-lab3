@@ -1,0 +1,168 @@
+/* Style Sheet for index.html*/
+* {
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: rgb(43, 42, 42);
+    color: #ffffff; 
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+}
+a {
+    color: #ffffff;
+    text-decoration: underline dotted;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+ }
+
+h2 + h3 {
+    margin-top:30px
+}
+/* shorten the field */
+[list="topics"] {
+    width: 5%;
+   
+}
+nav {
+    margin-bottom: auto;
+    position: sticky;
+    top: 0px;
+    float: inline-start;
+    /* cover other element  */
+    background-color: rgb(43, 42, 42);
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+
+}
+nav ul{
+    justify-content: space-around;
+    /* show list in one line */
+    display: flex;
+    /* remove bullets */
+    list-style: none;
+    /* remove space between list items */
+}
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-flow: column;
+    }
+}
+    
+
+nav ul li{
+    /* remove space between list items */
+    align-self: center;
+    margin: 0 0.5em;
+    font-size: 1.5em;
+}
+body li {
+
+    padding-bottom: 10px;
+}
+main{
+    position: relative;
+}
+h1,h2 {
+    color: darkgrey;    
+}
+img {
+    border-radius: 5px;
+    border-width: 1px;
+    width: 100%;
+    height: auto;
+    max-width: 30cm;
+    min-width: 20pc;
+}
+video {
+    border-radius: 5px;
+    border-color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+#message {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: dotted;
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+}
+label+input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: dotted;
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+}
+fieldset > input {
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+}
+.form{
+    grid-column: 1/3;
+}
+#reset:active{
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+}
+#reset.reset {
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+}
+#date{
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+}
+header{
+    display: inline-block;
+}
+footer {
+    display: inline;
+    font-size: 0.9em;
+    color: grey;
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    padding: 0.5em;
+}
+
+h1 ~ h3 {
+    margin-top: 20px;
+}

@@ -51,6 +51,8 @@ nav ul{
 @media screen and (max-width: 800px) {
     nav ul {
         flex-flow: column;
+        flex-wrap: wrap ;
+        flex-shrink: calc(100% / 3);
     }
 }
     
@@ -58,6 +60,7 @@ nav ul{
 nav ul li{
     /* remove space between list items */
     align-self: center;
+    justify-content: center ;
     margin: 0 0.5em;
     font-size: 1.5em;
 }
@@ -90,7 +93,9 @@ video {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
+    
 }
+
 
 #message {
     margin-top: 10px;

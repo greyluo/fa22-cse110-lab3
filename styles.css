@@ -147,7 +147,7 @@ fieldset > input {
     color: #ffffff;
     border-radius: 5px;
     border-width: 1px;
-    border-color: #ffffff;
+    border-color: hsl(0, 0%, 100%);
     padding: 5px;
     margin: 5px;
 }
